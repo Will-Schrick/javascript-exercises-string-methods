@@ -3,6 +3,12 @@
 //    'b' de cada uno de los elementos de la string en la palabra the-bridge.
 // =============================================================================
 function getCharAt(string) {
+  //const string = "the-bridge";
+  const letter = string.charAt(4);
+  return letter;
+
+ // console.log(string);
+
   // Aquí tu código
 }
 
@@ -12,6 +18,10 @@ function getCharAt(string) {
 // =============================================================================
 function getSubstring(string) {
   // Aquí tu código
+  //console.log(string);
+  //the-bridge-is-here
+  const answer = string.substring(0,10);
+  return answer;
 }
 
 // =============================================================================
@@ -20,6 +30,11 @@ function getSubstring(string) {
 // =============================================================================
 function getSubstr(string) {
   // Aquí tu código
+  //console.log(string);
+  //the-bridge-is-here
+    const answer = string.substr(4,6);
+    return answer;
+
 }
 
 // =============================================================================
@@ -28,6 +43,9 @@ function getSubstr(string) {
 // =============================================================================
 function getUpperCase(string) {
   // Aquí tu código
+  console.log(string);
+  const answer = string.toUpperCase();
+  return answer;
 }
 
 // =============================================================================
@@ -36,6 +54,8 @@ function getUpperCase(string) {
 // =============================================================================
 function getLowerCase(string) {
   // Aquí tu código
+  const answer = string.toLowerCase();
+  return answer;
 }
 
 // =============================================================================
@@ -44,6 +64,7 @@ function getLowerCase(string) {
 // =============================================================================
 function getTrim(string) {
   // Aquí tu código
+  console.log(string);
 }
 
 // =============================================================================

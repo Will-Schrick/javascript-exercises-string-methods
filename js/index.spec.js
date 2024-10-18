@@ -40,6 +40,10 @@ describe("Pruebas para funciones de manipulación de cadenas de texto", function
     expect(getReplace("The Bridge is great", "great", "amazing")).toBe("The Bridge is amazing");
   });
 
+  it("Debería devolver la frase con las palabras reemplazadas", function() {
+    expect(getReplace("The Bridge is great", "Bridge", "Apple")).toBe("The Apple is great");
+  });
+
   // Prueba para getIndexOf
   it("Debería devolver la posición de 'The'", function() {
     expect(getIndexOf("The Bridge is great")).toBe(0);
