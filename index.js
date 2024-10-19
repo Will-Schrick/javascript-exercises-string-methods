@@ -43,7 +43,7 @@ function getSubstr(string) {
 // =============================================================================
 function getUpperCase(string) {
   // Aquí tu código
-  console.log(string);
+  //console.log(string);
   const answer = string.toUpperCase();
   return answer;
 }
@@ -64,7 +64,10 @@ function getLowerCase(string) {
 // =============================================================================
 function getTrim(string) {
   // Aquí tu código
-  console.log(string);
+  const answer = string.trim();
+  return answer;
+ // console.log(string);
+ 
 }
 
 // =============================================================================
@@ -75,12 +78,21 @@ function getSplit(string) {
   // Aquí tu código
 }
 
+
+
 // =============================================================================
 // 8. Dada la siguiente string, usa .replace() para devolver un string
 //    con las palabras que forman la frase.
 // =============================================================================
-function getReplace(string) {
+function getReplace(string,wordTorReplace,wordToAdd) {
+ 
+  //
   // Aquí tu código
+  //console.log(string);
+  //The Bridge is great
+  const answer = string.replace(wordTorReplace, wordToAdd);
+  return answer; 
+
 }
 
 // =============================================================================
