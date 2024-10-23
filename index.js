@@ -65,8 +65,8 @@ function getLowerCase(string) {
 function getTrim(string) {
   // Aquí tu código
   const answer = string.trim();
+  console.log(string);
   return answer;
- // console.log(string);
  
 }
 
@@ -76,6 +76,10 @@ function getTrim(string) {
 // =============================================================================
 function getSplit(string) {
   // Aquí tu código
+  console.log(string);
+  const answerSplit = string.split(' ')
+  
+ return answerSplit;
 }
 
 
@@ -84,16 +88,23 @@ function getSplit(string) {
 // 8. Dada la siguiente string, usa .replace() para devolver un string
 //    con las palabras que forman la frase.
 // =============================================================================
-function getReplace(string,wordTorReplace,wordToAdd) {
- 
-  //
+function getReplace(string,wordToReplace,wordToAdd) {
+   //
   // Aquí tu código
   //console.log(string);
   //The Bridge is great
-  const answer = string.replace(wordTorReplace, wordToAdd);
-  return answer; 
 
+  const answer1 = string.replace( "great","amazing");
+  console.log(answer1);
+  const answer2 = string.replace(wordToReplace,wordToAdd);
+  
+  return answer2;
 }
+
+console.log(getReplace("The Bridge is great", "Bridge", "Apple"));
+
+
+
 
 // =============================================================================
 // 9. Dada la siguiente string, usa .indexOf() para devolver posición
@@ -101,7 +112,11 @@ function getReplace(string,wordTorReplace,wordToAdd) {
 // =============================================================================
 function getIndexOf(string) {
   // Aquí tu código
+  const indexThe = string.indexOf('The');
+  return indexThe;
 }
+
+
 
 // =============================================================================
 // 10. Dada la siguiente string, usa .startsWith() para devolver true
@@ -109,6 +124,7 @@ function getIndexOf(string) {
 // =============================================================================
 function getStartsWith(string) {
   // Aquí tu código
+  return string.toLowerCase().startsWith('the');
 }
 
 // =============================================================================
@@ -117,7 +133,13 @@ function getStartsWith(string) {
 // =============================================================================
 function getEndsWith(string) {
   // Aquí tu código
+  console.log(string);
+  return string.toLowerCase().endsWith('here');
+  
 }
+
+//console.log(getEndsWith(string)); 
+// I can't see True and I would like to see it print in console. ? 
 
 // =============================================================================
 // 12. Dada la siguiente string, usa .includes() para devolver true
