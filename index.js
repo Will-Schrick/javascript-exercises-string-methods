@@ -7,7 +7,7 @@ function getCharAt(string) {
   const letter = string.charAt(4);
   return letter;
 
- // console.log(string);
+  // console.log(string);
 
   // Aquí tu código
 }
@@ -20,7 +20,7 @@ function getSubstring(string) {
   // Aquí tu código
   //console.log(string);
   //the-bridge-is-here
-  const answer = string.substring(0,10);
+  const answer = string.substring(0, 10);
   return answer;
 }
 
@@ -32,9 +32,8 @@ function getSubstr(string) {
   // Aquí tu código
   //console.log(string);
   //the-bridge-is-here
-    const answer = string.substr(4,6);
-    return answer;
-
+  const answer = string.substr(4, 6);
+  return answer;
 }
 
 // =============================================================================
@@ -67,7 +66,6 @@ function getTrim(string) {
   const answer = string.trim();
   console.log(string);
   return answer;
- 
 }
 
 // =============================================================================
@@ -77,34 +75,29 @@ function getTrim(string) {
 function getSplit(string) {
   // Aquí tu código
   console.log(string);
-  const answerSplit = string.split(' ')
-  
- return answerSplit;
+  const answerSplit = string.split(" ");
+
+  return answerSplit;
 }
-
-
 
 // =============================================================================
 // 8. Dada la siguiente string, usa .replace() para devolver un string
 //    con las palabras que forman la frase.
 // =============================================================================
-function getReplace(string,wordToReplace,wordToAdd) {
-   //
+function getReplace(string, wordToReplace, wordToAdd) {
+  //
   // Aquí tu código
   //console.log(string);
   //The Bridge is great
 
-  const answer1 = string.replace( "great","amazing");
+  const answer1 = string.replace("great", "amazing");
   console.log(answer1);
-  const answer2 = string.replace(wordToReplace,wordToAdd);
-  
+  const answer2 = string.replace(wordToReplace, wordToAdd);
+
   return answer2;
 }
 
 console.log(getReplace("The Bridge is great", "Bridge", "Apple"));
-
-
-
 
 // =============================================================================
 // 9. Dada la siguiente string, usa .indexOf() para devolver posición
@@ -112,11 +105,9 @@ console.log(getReplace("The Bridge is great", "Bridge", "Apple"));
 // =============================================================================
 function getIndexOf(string) {
   // Aquí tu código
-  const indexThe = string.indexOf('The');
+  const indexThe = string.indexOf("The");
   return indexThe;
 }
-
-
 
 // =============================================================================
 // 10. Dada la siguiente string, usa .startsWith() para devolver true
@@ -124,7 +115,7 @@ function getIndexOf(string) {
 // =============================================================================
 function getStartsWith(string) {
   // Aquí tu código
-  return string.toLowerCase().startsWith('the');
+  return string.toLowerCase().startsWith("the");
 }
 
 // =============================================================================
@@ -134,12 +125,10 @@ function getStartsWith(string) {
 function getEndsWith(string) {
   // Aquí tu código
   console.log(string);
-  return string.toLowerCase().endsWith('here');
-  
+  const ending = string.toLowerCase().endsWith("here");
+  console.log(ending);
+  return ending;
 }
-
-//console.log(getEndsWith(string)); 
-// I can't see True and I would like to see it print in console. ? 
 
 // =============================================================================
 // 12. Dada la siguiente string, usa .includes() para devolver true
@@ -147,6 +136,9 @@ function getEndsWith(string) {
 // =============================================================================
 function getIncludes(string) {
   // Aquí tu código
+  const containsThe = string.includes("the");
+  console.log(containsThe);
+  return containsThe;
 }
 
 // =============================================================================
@@ -155,6 +147,11 @@ function getIncludes(string) {
 // =============================================================================
 function getConcat(string1, string2) {
   // Aquí tu código
+  console.log(string1);
+  console.log(string2);
+  const concatTest = string1.concat(string2);
+  console.log(concatTest);
+  return concatTest;
 }
 
 // =============================================================================
